@@ -1,0 +1,17 @@
+body{
+    background-color: aquamarine;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#000;
+}
+.jogos {
+position: absolute;
+top: 5px;
+right: 0px;
+margin: 100px;
+background-color: rgb(55, 156, 250);
+border: radius 10px;
+border-color: blue;
+cursor: pointer;
+
+}
+

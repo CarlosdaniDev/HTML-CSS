@@ -1,0 +1,124 @@
+
+
+/* Importando a fonte personalizada */
+@font-face {
+    font-family: 'Clash_Bold';
+    src: url('fonts/Clash_Bold.otf') format('opentype');
+}
+
+/* Reset global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Clash_Bold', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #245093, #59c3c3);
+    overflow-x: hidden; /* Evita rolagem lateral */
+}
+
+/* Cabeçalho responsivo */
+.Titulo {
+    background-color: #f9c200;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2vw;
+    padding: 2vw;
+    text-align: center;
+}
+
+/* Ícones sociais */
+.icons {
+    display: flex;
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+    gap: 10px;
+}
+.social {
+}
+
+.instagram, .whatsapp, .youtube {
+    height: 3vw;
+    width: 3vw;
+    max-height: 45px;
+    max-width: 40px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+.Clans {
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 2vw auto;
+    max-width: 90%;
+    flex-wrap: nowrap;
+    
+}
+
+.Clans a {
+    color: #F9C200;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.Clans a:hover {
+    color: #ffffff;
+}
+.logo1 {
+    display: flex;
+    
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #000000;
+    text-align: center;
+    padding: 2vw;
+    width: 100%;
+    margin-top: auto;
+    color: #F9C200;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .Titulo {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .Titulo {
+        font-size: 4.5vw;
+    }
+    .icons {
+        top: 2vw;
+        right: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .Titulo {
+        font-size: 4vw;
+    }
+    .icons {
+        flex-direction: row;
+        top: 3vw;
+        right: 3vw;
+    }
+    .instagram, .whatsapp, .youtube {
+        height: 6vw;
+        width: 6vw;
+    }
+}

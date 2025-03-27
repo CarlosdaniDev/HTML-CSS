@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://wallpapers.com/images/hd/clash-of-clans-rocket-balloons-d91b1d73fd4x5cs3.jpg);
+}
+
+@font-face {
+    font-family: 'Clash_Bold';
+    src: url(fonts/Clash_Bold.otf)format('opentype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    font-family: 'Clash_Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+
+}
+
+.button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button a {
+    font-family: 'Clash_Bold', sans-serif;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: rgb(70, 143, 188);
+}
