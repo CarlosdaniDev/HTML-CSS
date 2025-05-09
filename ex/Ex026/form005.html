@@ -15,9 +15,8 @@
             text-align: center;
         }
         form {
-            background-color: aliceblue;
+            
             padding: 10px;
-            border-radius: 10px;
             width: 250px;
             display: block;
             margin: auto;
@@ -28,18 +27,21 @@
 <body>
     <h1>Formulários com e-mail e telefone </h1>
     <form action="" autocomplete="on">
-        <p><label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" placeholder="Nome completo" maxlength="15" required autocomplete="name">
-        </p>
-        <p>
-            <label for="iemail">E-mail:</label>
-            <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Seu endereço de e-mail">
-        </p>
-        <p>
-            <label for="itelefone">Telefone:
-            </label>
-            <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required placeholder="Seu número de telefone">
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Nome completo" maxlength="15" required autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Seu endereço de e-mail">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:
+                </label>
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
