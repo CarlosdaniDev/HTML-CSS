@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Formularios</title>
+    <style>
+body {
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+form {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    background-color: coral;
+    width: 250px;
+    border-radius: 10px;
+    
+}
+form > p > #botao {
+display: block;
+margin: auto;
+}
+    </style>
+</head>
+<body>
+    <h1>Testando</h1>
+    <div class="formulario">
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" minlength="8" maxlength="15" placeholder="Infome sua senha" autocomplete="current-password">
+            </p>
+        
+            <p id="botao">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>
