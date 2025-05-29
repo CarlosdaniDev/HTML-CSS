@@ -30,15 +30,15 @@ h1 {
     color: black;
 }
 
-menu {
+nav {
  display: none;
 
 }
-menu > ul {
+nav > ul {
    list-style-type: none; 
 }
 
-menu > ul > li > a {
+nav > ul > li > a {
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -48,7 +48,7 @@ menu > ul > li > a {
     border-top: 2px solid gray;
     
 }
-menu > ul > li > a:hover {
+nav > ul > li > a:hover {
 background-color: gray;
 }
 
