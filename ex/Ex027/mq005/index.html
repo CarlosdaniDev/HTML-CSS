@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="estilos/style.css">
-  
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
-menu
-</span>
+            menu
+        </span>
         <nav id="itens">
             <ul>
                 <li><a href="#">Opção 1</a>
@@ -29,13 +31,17 @@ menu
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fugiat quas sed ipsam? Corrupti hic est
-                assumenda. Rerum fuga aperiam, consectetur, quas consequatur temporibus asperiores accusantium illo eveniet
-                eligendi dolor? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quos culpa nihil quaerat non
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fugiat quas sed ipsam? Corrupti hic
+                est
+                assumenda. Rerum fuga aperiam, consectetur, quas consequatur temporibus asperiores accusantium illo
+                eveniet
+                eligendi dolor? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quos culpa nihil quaerat
+                non
                 similique eum placeat expedita quidem voluptatum, adipisci sunt possimus obcaecati necessitatibus magnam
-                tempora accusantium. Illo, sunt.</p> 
+                tempora accusantium. Illo, sunt.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatibus esse accusantium eveniet
-                necessitatibus sit mollitia deserunt culpa quod dolor vitae tenetur ducimus sapiente asperiores cupiditate
+                necessitatibus sit mollitia deserunt culpa quod dolor vitae tenetur ducimus sapiente asperiores
+                cupiditate
                 saepe, minima omnis nihil?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, soluta veniam. Molestias, aperiam
                 dolor maiores similique incidunt, perspiciatis reprehenderit recusandae consectetur beatae nobis quasi
@@ -43,16 +49,26 @@ menu
                 adipisicing elit. Illum dolorum sint optio voluptate repudiandae. Quos, ullam a fugiat ad non labore
                 exercitationem doloribus quidem dolorem provident quis sint id eligendi?</p>
         </article>
-        </main>
-        <script>
-            function clickMenu() {
-                if (itens.style.display == 'block') {
-                    itens.style.display = 'none'}
-                    else {
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
                 itens.style.display = 'block'
-            }}
-           
-        </script>
+            }
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+    </script>
 </body>
 
 </html>
