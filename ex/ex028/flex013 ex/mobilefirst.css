@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(232, 232, 232);
+}
+
+header {
+    background-color: darkgray;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    padding-bottom: 12px;
+}
+div {
+    display: flex;
+    flex-flow: column;
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(72, 73, 73);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90vw;
+    margin: 0.5px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.532);
+}
+a:hover {
+    background-color: azure;
+    color: black;
+}

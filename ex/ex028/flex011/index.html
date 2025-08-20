@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        div.item1 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+        div.item2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item"><h2>A</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, distinctio commodi consequatur nihil minima ex placeat itaque aliquid officiis, explicabo aperiam expedita qui voluptatibus sequi ea suscipit. Provident, voluptatum enim!</p></div>
+        <div class="item1"><h2>B</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, distinctio commodi consequatur nihil minima ex placeat itaque aliquid officiis, explicabo aperiam expedita qui voluptatibus sequi ea suscipit. Provident, voluptatum enim!</p></div>
+        <div class="item2"><h2>C</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, distinctio commodi consequatur nihil minima ex placeat itaque aliquid officiis, explicabo aperiam expedita qui voluptatibus sequi ea suscipit. Provident, voluptatum enim!</p></div>
+        
+    </div>
+</body>
+
+</html>
