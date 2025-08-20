@@ -5,10 +5,7 @@
 * {
     margin: 0;
     
-}
-
-body {
-    background-color: rgb(232, 232, 232);
+    
 }
 
 header {
@@ -20,10 +17,8 @@ header {
     align-items: center;
 }
 
-h1 {
-    padding-bottom: 12px;
-}
-div {
+
+nav {
     display: flex;
     flex-flow: row nowrap;
     flex: 1 1 auto;
@@ -39,17 +34,5 @@ a {
     flex-basis: 70px;
    
     
-}
-
-section {
-    padding: 20px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.532);
-}
-a:hover {
-    background-color: azure;
-    color: black;
 }
 }
